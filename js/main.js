@@ -1,39 +1,25 @@
 /* ===== LOADER ===== */
-const loaderText = document.getElementById('loaderText');
 const loaderProgress = document.getElementById('loaderProgress');
 const loader = document.getElementById('loader');
 
-const loadingLines = [
-  'Initialisation...',
-  'Chargement des modules...',
-  'Compilation des compétences...',
-  'Connexion à l\'univers digital...',
-  'Prêt ✓'
-];
-
-let lineIndex = 0;
 let progress = 0;
-
-function runLoader() {
-  const interval = setInterval(() => {
-    if (lineIndex < loadingLines.length) {
-      loaderText.textContent = loadingLines[lineIndex];
-      progress = Math.min((lineIndex + 1) / loadingLines.length * 100, 100);
-      loaderProgress.style.width = progress + '%';
-      lineIndex++;
-    } else {
-      clearInterval(interval);
-      setTimeout(() => {
-        loader.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-        startAnimations();
-      }, 400);
-    }
-  }, 350);
-}
+const interval = setInterval(() => {
+  progress += Math.random() * 18 + 5;
+  if (progress >= 100) {
+    progress = 100;
+    loaderProgress.style.width = '100%';
+    clearInterval(interval);
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+      startAnimations();
+    }, 400);
+  } else {
+    loaderProgress.style.width = progress + '%';
+  }
+}, 120);
 
 document.body.style.overflow = 'hidden';
-runLoader();
 
 /* ===== CUSTOM CURSOR ===== */
 const cursor = document.getElementById('cursor');

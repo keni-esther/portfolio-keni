@@ -4,38 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Keni Grace Esther DABOGNON — Portfolio</title>
-  <meta name="description" content="Portfolio de Keni Grace Esther DABOGNON — Développeuse Front-end, Designer UX/UI, Data & IA" />
+  <meta name="description" content="Portfolio de Keni Grace Esther DABOGNON — Développeuse Front-end Junior, Designer UX/UI, Data & IA" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Fira+Code:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- CURSOR CUSTOM -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-follower" id="cursorFollower"></div>
 
   <!-- LOADER -->
   <div class="loader" id="loader">
     <div class="loader-inner">
-      <span class="loader-text" id="loaderText"></span>
+      <span class="loader-logo">K.</span>
       <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
     </div>
   </div>
 
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
-    <div class="nav-logo">
-      <span class="logo-bracket">&lt;</span>
-      <span class="logo-name">KeniDev</span>
-      <span class="logo-bracket"> /&gt;</span>
-    </div>
+    <div class="nav-logo">Keni<span>.</span></div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about" class="nav-link">À propos</a></li>
-      <li><a href="#skills" class="nav-link">Compétences</a></li>
+      <li><a href="#about"    class="nav-link">À propos</a></li>
+      <li><a href="#skills"   class="nav-link">Compétences</a></li>
       <li><a href="#projects" class="nav-link">Projets</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -44,41 +39,55 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="grid-overlay"></div>
-      <canvas id="particleCanvas"></canvas>
-    </div>
-    <div class="hero-content">
+
+    <!-- Gauche : texte -->
+    <div class="hero-left">
       <div class="hero-tag">
         <span class="tag-dot"></span>
-        <span>Disponible pour des opportunités</span>
+        Disponible pour un stage
       </div>
       <p class="hero-greeting">Bonjour, je suis</p>
       <h1 class="hero-name">
-        <span class="name-line">Keni Grace Esther</span>
-        <span class="name-line accent">DABOGNON</span>
+        Keni Grace Esther
+        <span class="accent">DABOGNON</span>
       </h1>
       <div class="hero-roles">
-        <span class="role-prefix">// </span>
+        <span class="role-prefix">— </span>
         <span class="role-text" id="roleText"></span>
         <span class="cursor-blink">|</span>
       </div>
       <p class="hero-desc">
-        Apprenant en Data &amp; IA · Designer UX/UI · Développeuse Web &amp; Mobile<br/>
-        <span class="location">📍 Côte d'Ivoire — Simplon</span>
+        Développeuse Front-end Junior &amp; Designer UX/UI,
+        je crée des interfaces belles et centrées utilisateur.
+        <span class="location">📍 Côte d'Ivoire · Simplon CI</span>
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">
-          <span>Voir mes projets</span>
+          Voir mes projets
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
         <a href="assets/cv-keni-dabognon.pdf" download class="btn btn-secondary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span>Télécharger mon CV</span>
+          Mon CV
         </a>
-        <a href="#contact" class="btn btn-secondary">Me contacter</a>
       </div>
     </div>
+
+    <!-- Droite : photo -->
+    <div class="hero-right">
+      <div class="hero-right-deco"></div>
+      <div class="hero-photo-wrap">
+        <img src="assets/photo.jpg" alt="Keni Grace Esther DABOGNON" class="hero-photo" />
+      </div>
+      <div class="hero-right-badge">
+        <span class="badge-num">4+</span>
+        <span class="badge-label">Projets</span>
+      </div>
+      <div class="hero-right-tag">
+        ✨ <span>UX/UI · Front-end · Data</span>
+      </div>
+    </div>
+
     <div class="hero-scroll">
       <span>scroll</span>
       <div class="scroll-line"></div>
@@ -89,90 +98,72 @@
   <section class="section about" id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-number">01.</span>
-        <h2 class="section-title">À propos de moi</h2>
-        <div class="section-line"></div>
+        <span class="section-eyebrow">01. À propos</span>
+        <h2 class="section-title">Qui suis-je ?</h2>
+        <div class="section-divider"></div>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <div class="code-comment">/* qui suis-je ? */</div>
-          <p>
-            Je suis <strong>Développeuse Front-end Junior</strong> et <strong>Designer UX/UI</strong>, passionnée par la création d'interfaces belles, intuitives et centrées sur l'utilisateur.
+      <div class="about-inner">
+
+        <!-- Photo col -->
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <img src="assets/photo.jpg" alt="Keni Grace Esther DABOGNON" />
+            <div class="about-photo-deco"></div>
+            <div class="about-photo-ring"></div>
+          </div>
+          <div class="about-photo-badges">
+            <div class="about-badge">
+              <span class="about-badge-icon">🎨</span>
+              <div>
+                <span class="about-badge-text">Designer UX/UI</span>
+                <span class="about-badge-sub">Figma · Prototypage</span>
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="about-badge-icon">💻</span>
+              <div>
+                <span class="about-badge-text">Front-end Dev</span>
+                <span class="about-badge-sub">HTML · CSS · JS</span>
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="about-badge-icon">🤖</span>
+              <div>
+                <span class="about-badge-text">Data & IA</span>
+                <span class="about-badge-sub">Python · Power BI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texte col -->
+        <div class="about-text-col">
+          <p class="about-quote">
+            "Je crée des expériences numériques belles,<br/>
+            intuitives et centrées sur l'utilisateur."
           </p>
           <p>
-            En formation à <strong>Simplon Côte d'Ivoire</strong>, je développe des compétences en développement web et mobile, conception UX/UI et Data & Intelligence Artificielle — une combinaison qui me permet de concevoir des produits pensés du design jusqu'à la donnée.
+            Je suis <strong>Développeuse Front-end Junior</strong> et <strong>Designer UX/UI</strong>, en formation à Simplon Côte d'Ivoire. Je conçois des interfaces qui allient esthétique soignée et fonctionnalité réelle.
           </p>
           <p>
-            Curieuse et rigoureuse, j'aime résoudre des problèmes avec des <strong>solutions visuellement soignées et fonctionnelles</strong>, en mettant toujours l'utilisateur au centre de mes décisions de design et de développement.
+            Ma particularité : je combine le <strong>design</strong>, le <strong>développement</strong> et la <strong>data</strong> — ce qui me permet de créer des produits pensés du wireframe jusqu'à la donnée.
           </p>
           <p>
-            Actuellement à la recherche d'un <strong>stage en développement Front-end ou design UX/UI</strong>, je suis prête à apporter mon énergie et mes compétences à une équipe innovante.
+            Curieuse et rigoureuse, je suis motivée par les <strong>défis créatifs et techniques</strong>, et je cherche à rejoindre une équipe innovante en stage pour mettre mes compétences en pratique.
           </p>
           <div class="about-stats">
             <div class="stat">
               <span class="stat-num">4+</span>
-              <span class="stat-label">Projets réalisés</span>
+              <span class="stat-label">Projets</span>
             </div>
             <div class="stat">
-              <span class="stat-num">5+</span>
-              <span class="stat-label">Technologies</span>
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Compétences</span>
             </div>
             <div class="stat">
-              <span class="stat-num">∞</span>
-              <span class="stat-label">Curiosité</span>
+              <span class="stat-num">🇨🇮</span>
+              <span class="stat-label">Côte d'Ivoire</span>
             </div>
-          </div>
-        </div>
-        <div class="about-visual">
-
-          <!-- PHOTO -->
-          <div class="photo-wrapper">
-            <div class="photo-frame">
-              <img
-                src="assets/photo.jpg"
-                alt="Keni Grace Esther DABOGNON"
-                class="profile-photo"
-                id="profilePhoto"
-                onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';"
-              />
-              <div class="photo-placeholder" id="photoPlaceholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
-                  <circle cx="12" cy="7" r="4"/>
-                </svg>
-                <span>Ajouter votre photo</span>
-                <small>assets/photo.jpg</small>
-              </div>
-              <div class="photo-glow"></div>
-              <div class="photo-border-animated"></div>
-            </div>
-            <div class="photo-badges">
-              <span class="photo-badge-item">🇨🇮 Côte d'Ivoire</span>
-              <span class="photo-badge-item">💻 Simplon CI</span>
-            </div>
-          </div>
-
-          <div class="code-card">
-            <div class="code-header">
-              <div class="dot red"></div>
-              <div class="dot yellow"></div>
-              <div class="dot green"></div>
-              <span class="file-name">profile.json</span>
-            </div>
-            <pre class="code-body"><code><span class="c-bracket">{</span>
-  <span class="c-key">"nom"</span>: <span class="c-str">"Keni Grace Esther DABOGNON"</span>,
-  <span class="c-key">"rôle"</span>: <span class="c-str">"Front-end · UX/UI · Data & IA"</span>,
-  <span class="c-key">"localisation"</span>: <span class="c-str">"Côte d'Ivoire 🇨🇮"</span>,
-  <span class="c-key">"formation"</span>: <span class="c-str">"Simplon CI — Data & IA"</span>,
-  <span class="c-key">"statut"</span>: <span class="c-str">"Ouverte aux opportunités ✅"</span>,
-  <span class="c-key">"passions"</span>: <span class="c-bracket">[</span>
-    <span class="c-str">"Innovation"</span>,
-    <span class="c-str">"UI/UX Design"</span>,
-    <span class="c-str">"Intelligence Artificielle"</span>,
-    <span class="c-str">"Data Visualisation"</span>
-  <span class="c-bracket">]</span>,
-  <span class="c-key">"objectif"</span>: <span class="c-str">"Créer des solutions<br/>            centrées utilisateur"</span>
-<span class="c-bracket">}</span></code></pre>
           </div>
         </div>
       </div>
@@ -183,17 +174,15 @@
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section-header">
-        <span class="section-number">02.</span>
-        <h2 class="section-title">Compétences</h2>
-        <div class="section-line"></div>
+        <span class="section-eyebrow">02. Compétences</span>
+        <h2 class="section-title">Ce que je sais faire</h2>
+        <p class="section-subtitle">Un ensemble de compétences multidisciplinaires au service de vos projets</p>
+        <div class="section-divider"></div>
       </div>
       <div class="skills-grid">
-
-        <div class="skill-category" data-aos="fade-up">
-          <div class="skill-cat-header">
-            <span class="skill-icon">🌐</span>
-            <h3>Web & Mobile</h3>
-          </div>
+        <div class="skill-card" data-aos="fade-up">
+          <span class="skill-icon">🌐</span>
+          <h3>Web & Mobile</h3>
           <div class="skill-tags">
             <span class="tag">HTML/CSS</span>
             <span class="tag">JavaScript</span>
@@ -202,12 +191,19 @@
             <span class="tag">PHP/MySQL</span>
           </div>
         </div>
-
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-          <div class="skill-cat-header">
-            <span class="skill-icon">🤖</span>
-            <h3>Data & IA</h3>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="skill-icon">🎨</span>
+          <h3>Design UX/UI</h3>
+          <div class="skill-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Prototypage</span>
+            <span class="tag">Wireframing</span>
+            <span class="tag">UX Research</span>
           </div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="skill-icon">🤖</span>
+          <h3>Data & IA</h3>
           <div class="skill-tags">
             <span class="tag">Python</span>
             <span class="tag">Pandas</span>
@@ -216,33 +212,16 @@
             <span class="tag">SQL</span>
           </div>
         </div>
-
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-          <div class="skill-cat-header">
-            <span class="skill-icon">📊</span>
-            <h3>Data Visualisation</h3>
-          </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <span class="skill-icon">📊</span>
+          <h3>Data & Automation</h3>
           <div class="skill-tags">
             <span class="tag">Power BI</span>
-            <span class="tag">Nettoyage données</span>
-            <span class="tag">Structuration</span>
+            <span class="tag">n8n</span>
+            <span class="tag">GitHub</span>
             <span class="tag">Visualisation</span>
           </div>
         </div>
-
-        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-          <div class="skill-cat-header">
-            <span class="skill-icon">🎨</span>
-            <h3>Design & No-Code</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="tag">UX/UI Design</span>
-            <span class="tag">Figma</span>
-            <span class="tag">Automatisation n8n</span>
-            <span class="tag">GitHub</span>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -251,26 +230,24 @@
   <section class="section projects" id="projects">
     <div class="container">
       <div class="section-header">
-        <span class="section-number">03.</span>
-        <h2 class="section-title">Projets</h2>
-        <div class="section-line"></div>
+        <span class="section-eyebrow">03. Projets</span>
+        <h2 class="section-title">Mes réalisations</h2>
+        <p class="section-subtitle">Des projets concrets qui reflètent mes compétences en design, développement et data</p>
+        <div class="section-divider"></div>
       </div>
       <div class="projects-grid">
 
         <!-- AkwabaIA -->
         <div class="project-card featured" data-aos="fade-up">
-          <div class="project-card-inner">
+          <div class="project-img-area">🌴</div>
+          <div class="project-body">
             <div class="project-top">
-              <div class="project-folder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-              </div>
+              <h3 class="project-title">AkwabaIA</h3>
               <div class="project-links">
                 <span class="project-badge">n8n · Telegram</span>
               </div>
             </div>
-            <div class="project-emoji">🌴</div>
-            <h3 class="project-title">AkwabaIA</h3>
-            <p class="project-desc">Agent IA touristique dédié à la Côte d'Ivoire, entièrement construit avec n8n et Telegram. Automatisation de workflows intelligents pour guider les voyageurs à travers les destinations, cultures et expériences locales — zéro code, 100% fonctionnel.</p>
+            <p class="project-desc">Agent IA touristique dédié à la Côte d'Ivoire, entièrement construit avec n8n et Telegram. Automatisation de workflows intelligents pour guider les voyageurs — zéro code, 100% fonctionnel.</p>
             <div class="project-stack">
               <span>n8n</span><span>Telegram Bot</span><span>Automatisation</span><span>No-Code</span>
             </div>
@@ -281,22 +258,18 @@
               </a>
             </div>
           </div>
-          <div class="project-glow"></div>
         </div>
 
-        <!-- CvmatchIA -->
+        <!-- CvMatchIA -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-card-inner">
+          <div class="project-img-area">📄</div>
+          <div class="project-body">
             <div class="project-top">
-              <div class="project-folder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-              </div>
+              <h3 class="project-title">CvMatchIA</h3>
               <div class="project-links">
                 <span class="project-badge">IA · RH</span>
               </div>
             </div>
-            <div class="project-emoji">📄</div>
-            <h3 class="project-title">CvMatchIA</h3>
             <p class="project-desc">Plateforme de matching CV/Recruteurs pilotée par l'IA. Les candidats déposent leurs CVs et l'algorithme connecte les profils aux recruteurs les plus pertinents.</p>
             <div class="project-stack">
               <span>Python</span><span>IA</span><span>Web</span><span>SQL</span>
@@ -308,60 +281,51 @@
               </a>
             </div>
           </div>
-          <div class="project-glow"></div>
         </div>
 
-        <!-- Power BI Alcool -->
+        <!-- Power BI -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card-inner">
+          <div class="project-img-area">📊</div>
+          <div class="project-body">
             <div class="project-top">
-              <div class="project-folder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-              </div>
+              <h3 class="project-title">Alcohol World Dashboard</h3>
               <div class="project-links">
                 <span class="project-badge">Data · Power BI</span>
               </div>
             </div>
-            <div class="project-emoji">📊</div>
-            <h3 class="project-title">Alcool World Dashboard</h3>
-            <p class="project-desc">Tableau de bord interactif Power BI sur la consommation d'alcool dans le monde. Nettoyage et structuration des données, visualisations comparatives par pays et régions.</p>
-            <!-- Galerie captures Power BI -->
+            <p class="project-desc">Tableau de bord interactif sur la consommation d'alcool mondiale. Nettoyage, structuration et visualisation des données par pays, région et période.</p>
             <div class="powerbi-gallery">
               <div class="gallery-main">
-                <img src="assets/powerbi-1.png" alt="Dashboard par pays" class="gallery-img active" id="pbImg0" />
-                <img src="assets/powerbi-2.png" alt="Dashboard par région" class="gallery-img" id="pbImg1" />
-                <img src="assets/powerbi-3.png" alt="Dashboard par période" class="gallery-img" id="pbImg2" />
-                <img src="assets/powerbi-4.png" alt="Dashboard comparatif" class="gallery-img" id="pbImg3" />
+                <img src="assets/powerbi-1.png" alt="Vue 1" class="gallery-img active" />
+                <img src="assets/powerbi-2.png" alt="Vue 2" class="gallery-img" />
+                <img src="assets/powerbi-3.png" alt="Vue 3" class="gallery-img" />
+                <img src="assets/powerbi-4.png" alt="Vue 4" class="gallery-img" />
               </div>
               <div class="gallery-thumbs">
-                <button class="thumb active" onclick="switchPBI(0)" aria-label="Vue 1"></button>
-                <button class="thumb" onclick="switchPBI(1)" aria-label="Vue 2"></button>
-                <button class="thumb" onclick="switchPBI(2)" aria-label="Vue 3"></button>
-                <button class="thumb" onclick="switchPBI(3)" aria-label="Vue 4"></button>
+                <button class="thumb active" onclick="switchPBI(0)"></button>
+                <button class="thumb" onclick="switchPBI(1)"></button>
+                <button class="thumb" onclick="switchPBI(2)"></button>
+                <button class="thumb" onclick="switchPBI(3)"></button>
               </div>
             </div>
             <div class="project-stack">
-              <span>Power BI</span><span>Pandas</span><span>NumPy</span><span>Data</span>
+              <span>Power BI</span><span>Pandas</span><span>NumPy</span>
             </div>
           </div>
-          <div class="project-glow"></div>
         </div>
 
-        <!-- Chat&Gon -->
+        <!-- Chat&Go -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-card-inner">
+          <div class="project-img-area">💬</div>
+          <div class="project-body">
             <div class="project-top">
-              <div class="project-folder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-              </div>
+              <h3 class="project-title">Chat&amp;Go</h3>
               <div class="project-links">
                 <span class="project-badge">Mobile · IA</span>
-                <span class="project-badge figma">En cours</span>
+                <span class="project-badge alt">APK dispo</span>
               </div>
             </div>
-            <div class="project-emoji">💬</div>
-            <h3 class="project-title">Chat&amp;Go</h3>
-            <p class="project-desc">Application mobile avec agent IA intégré qui oriente les utilisateurs vers les bons prestataires selon leurs besoins. Maquette Figma complète, APK en cours de finalisation.</p>
+            <p class="project-desc">Application mobile avec agent IA qui oriente les utilisateurs vers les bons prestataires selon leurs besoins. Maquette Figma complète + APK disponible.</p>
             <div class="project-stack">
               <span>React Native</span><span>IA Agent</span><span>Figma</span><span>Capacitor</span>
             </div>
@@ -370,13 +334,12 @@
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4z"/><path d="M4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4z"/><path d="M4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4z"/><path d="M12 0h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0z"/><path d="M20 12c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4z"/></svg>
                 Voir la maquette
               </a>
-              <span class="project-btn project-btn-apk coming">
+              <a href="#" class="project-btn project-btn-apk" id="apkBtn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                APK bientôt
-              </span>
+                Télécharger APK
+              </a>
             </div>
           </div>
-          <div class="project-glow"></div>
         </div>
 
       </div>
@@ -387,20 +350,20 @@
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-number">04.</span>
-        <h2 class="section-title">Contact</h2>
-        <div class="section-line"></div>
+        <span class="section-eyebrow">04. Contact</span>
+        <h2 class="section-title">Travaillons ensemble</h2>
+        <div class="section-divider"></div>
       </div>
       <div class="contact-content">
         <div class="contact-text">
-          <h3>Travaillons ensemble</h3>
+          <h3>Je suis à la recherche d'un stage 🎯</h3>
           <div class="contact-stage-badge">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>🎯 Je suis actuellement à la recherche d'un <strong>stage en Développement Front-end ou Design UX/UI</strong>. Disponible dès maintenant — n'hésitez pas à me contacter !</span>
+            <span>Je recherche activement un <strong>stage en Développement Front-end ou Design UX/UI</strong>. Disponible dès maintenant — n'hésitez pas à me contacter, je vous répondrai avec plaisir !</span>
           </div>
-          <p>Ouverte à toutes opportunités — stage, alternance, freelance ou collaboration sur des projets innovants.</p>
+          <p>Ouverte aussi à toute collaboration, freelance ou opportunité dans les domaines du web, du design et de la data.</p>
           <div class="contact-links">
-            <a href="mailto:keniesther67@gmail.com" class="contact-link" id="emailLink">
+            <a href="mailto:keniesther67@gmail.com" class="contact-link">
               <div class="contact-link-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
@@ -409,7 +372,7 @@
                 <span class="link-value">keniesther67@gmail.com</span>
               </div>
             </a>
-            <a href="https://github.com/keni-esther" class="contact-link" id="githubLink">
+            <a href="https://github.com/keni-esther" target="_blank" rel="noopener" class="contact-link">
               <div class="contact-link-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               </div>
@@ -418,7 +381,7 @@
                 <span class="link-value">github.com/keni-esther</span>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/keni-gr%C3%A2ce-esther-dabognon-9154a2340/" class="contact-link" id="linkedinLink">
+            <a href="https://www.linkedin.com/in/keni-gr%C3%A2ce-esther-dabognon-9154a2340/" target="_blank" rel="noopener" class="contact-link">
               <div class="contact-link-icon">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </div>
@@ -429,7 +392,9 @@
             </a>
           </div>
         </div>
+
         <div class="contact-form-wrap">
+          <p class="form-title">Envoyer un message ✉️</p>
           <form class="contact-form" id="contactForm">
             <div class="form-row">
               <div class="form-group">
@@ -443,7 +408,7 @@
             </div>
             <div class="form-group">
               <label for="subject">Sujet</label>
-              <input type="text" id="subject" name="subject" placeholder="Proposition, collaboration..." required />
+              <input type="text" id="subject" name="subject" placeholder="Proposition de stage, collaboration..." required />
             </div>
             <div class="form-group">
               <label for="message">Message</label>
@@ -453,12 +418,8 @@
               <span>Envoyer le message</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
-            <div class="form-success" id="formSuccess">
-              <span>✅ Message envoyé ! Je vous réponds bientôt.</span>
-            </div>
-            <div class="form-error" id="formError">
-              <span>❌ Erreur lors de l'envoi. Réessayez ou écrivez directement à keniesther67@gmail.com</span>
-            </div>
+            <div class="form-success" id="formSuccess"><span>✅ Message envoyé ! Je vous réponds bientôt.</span></div>
+            <div class="form-error" id="formError"><span>❌ Erreur. Écrivez directement à keniesther67@gmail.com</span></div>
           </form>
         </div>
       </div>
@@ -467,17 +428,9 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo">
-        <span class="logo-bracket">&lt;</span>
-        <span>KeniDev</span>
-        <span class="logo-bracket"> /&gt;</span>
-      </div>
-      <p class="footer-text">
-        Conçu &amp; développé par <strong>Keni Grace Esther DABOGNON</strong>
-      </p>
-      <p class="footer-sub">Simplon Côte d'Ivoire · 2025</p>
-    </div>
+    <div class="footer-logo">Keni<span>.</span></div>
+    <p class="footer-text">Conçu &amp; développé par <strong>Keni Grace Esther DABOGNON</strong></p>
+    <p class="footer-sub">Simplon Côte d'Ivoire · 2025</p>
   </footer>
 
   <script src="js/main.js"></script>
