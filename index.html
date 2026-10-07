@@ -296,10 +296,14 @@
             <p class="project-desc">Tableau de bord interactif sur la consommation d'alcool mondiale. Nettoyage, structuration et visualisation des données par pays, région et période.</p>
             <div class="powerbi-gallery">
               <div class="gallery-main">
-                <img src="assets/powerbi-1.png" alt="Vue 1" class="gallery-img active" />
-                <img src="assets/powerbi-2.png" alt="Vue 2" class="gallery-img" />
-                <img src="assets/powerbi-3.png" alt="Vue 3" class="gallery-img" />
-                <img src="assets/powerbi-4.png" alt="Vue 4" class="gallery-img" />
+                <img src="assets/powerbi-1.png" alt="Vue 1" class="gallery-img active" onclick="openLightbox(0)" />
+                <img src="assets/powerbi-2.png" alt="Vue 2" class="gallery-img" onclick="openLightbox(1)" />
+                <img src="assets/powerbi-3.png" alt="Vue 3" class="gallery-img" onclick="openLightbox(2)" />
+                <img src="assets/powerbi-4.png" alt="Vue 4" class="gallery-img" onclick="openLightbox(3)" />
+                <div class="gallery-zoom-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  Cliquer pour agrandir
+                </div>
               </div>
               <div class="gallery-thumbs">
                 <button class="thumb active" onclick="switchPBI(0)"></button>
@@ -432,6 +436,23 @@
     <p class="footer-text">Conçu &amp; développé par <strong>Keni Grace Esther DABOGNON</strong></p>
     <p class="footer-sub">Simplon Côte d'Ivoire · 2025</p>
   </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); lightboxNav(-1)" aria-label="Précédent">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+      <div class="lightbox-counter" id="lightboxCounter">1 / 4</div>
+    </div>
+    <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); lightboxNav(1)" aria-label="Suivant">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

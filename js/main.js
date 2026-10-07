@@ -300,3 +300,43 @@ if (totalPBI > 0) {
     switchPBI(pbiIndex);
   }, 3000);
 }
+
+/* ===== LIGHTBOX ===== */
+const pbiSrcs = [
+  'assets/powerbi-1.png',
+  'assets/powerbi-2.png',
+  'assets/powerbi-3.png',
+  'assets/powerbi-4.png'
+];
+let lightboxIndex = 0;
+
+function openLightbox(index) {
+  lightboxIndex = index;
+  const lb = document.getElementById('lightbox');
+  const img = document.getElementById('lightboxImg');
+  const counter = document.getElementById('lightboxCounter');
+  img.src = pbiSrcs[index];
+  img.alt = `Dashboard Power BI - Vue ${index + 1}`;
+  counter.textContent = `${index + 1} / ${pbiSrcs.length}`;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = 'auto';
+}
+
+function lightboxNav(dir) {
+  lightboxIndex = (lightboxIndex + dir + pbiSrcs.length) % pbiSrcs.length;
+  openLightbox(lightboxIndex);
+}
+
+// Fermer avec Echap, naviguer avec flèches clavier
+document.addEventListener('keydown', (e) => {
+  const lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') lightboxNav(1);
+  if (e.key === 'ArrowLeft')  lightboxNav(-1);
+});
