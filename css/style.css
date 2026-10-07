@@ -222,6 +222,7 @@ body {
   background: linear-gradient(160deg, var(--rose-pale) 0%, var(--beige) 100%);
   display: flex; align-items: flex-end; justify-content: center;
   overflow: hidden;
+  min-height: 100vh;
 }
 .hero-right-deco {
   position: absolute; inset: 0;
@@ -245,13 +246,14 @@ body {
   filter: drop-shadow(0 -20px 40px rgba(212,132,154,0.2));
 }
 .hero-right-badge {
-  position: absolute; top: 2.5rem; right: 2.5rem;
+  position: absolute; top: 6rem; right: 2rem;
   background: white;
   border-radius: 14px;
   padding: 1rem 1.2rem;
   box-shadow: var(--shadow-lg);
   text-align: center;
-  min-width: 110px;
+  min-width: 100px;
+  z-index: 3;
 }
 .badge-num {
   font-family: var(--font-serif);

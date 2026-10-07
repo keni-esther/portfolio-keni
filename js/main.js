@@ -123,7 +123,7 @@ function typeRole() {
 
 function startAnimations() {
   typeRole();
-  initParticles();
+  // particles désactivées (canvas supprimé dans le nouveau design)
 }
 
 /* ===== PARTICLES ===== */
